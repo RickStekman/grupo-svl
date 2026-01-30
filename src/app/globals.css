@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+
+@import "tailwindcss";
+
+@theme {
+  /* Color Verde */
+  --color-brand: #dbe260;
+  --color-brand-dark: #c4cb54; 
+}
+
+
+/* Animación para el Carrusel de Clientes */
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* Se mueve solo el 50% porque duplicamos la lista */
+}
+
+.animate-scroll {
+  animation: scroll 100s linear infinite;
+}
+
+/* Pausar la animación al pasar el mouse (opcional pero recomendado) */
+.animate-scroll:hover {
+  animation-play-state: paused;
+}
+
+
+/* Máscara para desvanecer los bordes de la galería */
+.mask-gradient-sides {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+}
