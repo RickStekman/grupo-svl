@@ -43,3 +43,7 @@
     transparent
   );
 }
+
+html {
+  scroll-behavior: smooth;
+}

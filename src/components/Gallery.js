@@ -8,7 +8,7 @@ const galleryImages = [
   "/Image/Gallery/IMG-1.webp", 
   "/Image/Gallery/IMG-2.webp",
   "/Image/Gallery/IMG-3.webp",
-  "/Image/Gallery/IMG-4.webp",
+  "/Image/Gallery/IMG-8.webp",
   "/Image/Gallery/IMG-5.webp",
   "/Image/Gallery/IMG-6.webp",
   "/Image/Gallery/IMG-7.webp",

@@ -40,36 +40,42 @@ export default function Services() {
       title: "Agenciamiento Aduanal",
       desc: "Ofrecemos desaduanamiento para importaciones y exportaciones, coordinando cargas y cumpliendo normativas en el menor tiempo posible.",
       icon: <ClipboardCheck className="size-10" />,
+      href: "/servicios/agenciamiento-aduanal"
     },
     {
       title: "Flete Internacional",
       desc: "Recolecta de carga en cualquier parte del mundo con entregas en aeropuertos y puertos de Venezuela con asesoría experta.",
       icon: <Plane className="size-10" />,
+      href: "/servicios/flete-internacional"
     },
     {
       title: "Transporte Terrestre",
       desc: "Servicio de retiro de carga suelta y traslados estratégicos a Puerto Cabello o instalaciones del cliente.",
       icon: <Truck className="size-10" />,
+      href: "/servicios/transporte-terrestre"
     },
     {
       title: "Coordinación Logística",
       desc: "Gestión integral de espacios y contratos de compra-venta para asegurar el flujo de su mercancía.",
       icon: <Ship className="size-10" />,
+      href: "/servicios/coordinacion-logistica"
     },
     {
       title: "Almacén Logístico",
       desc: "Resguardo y manejo eficiente de mercancía en puntos clave para optimizar sus tiempos de entrega.",
       icon: <ShieldCheck className="size-10" />,
+      href: "/servicios/almacen-logistico"
     },
     {
       title: "Asesoría Tecnica",
       desc: "Profesionales expertos en aduanas brindan asesoría confiable y segura en cada operación.",
       icon: <Globe className="size-10" />,
+      href: "/servicios/asesoria-tecnica"
     }
   ];
 
   const aduanasVZLA = [
-    "Puerto Cabello", "La Guaira", "Maiquetía", "Valencia", "Maracaibo", "Guaranao", "Y MÁS"
+    "Puerto Cabello", "La Guaira", "Maiquetía", "Valencia", "Maracaibo", "San Antonio del Tachira", "Y MÁS"
   ];
 
   return (
@@ -127,7 +133,7 @@ export default function Services() {
               {/* CAMBIO: 'flex justify-center' y 'w-full' para centrar el botón */}
               <div className="flex justify-center w-full">
                 <Link 
-                  href="#Contact" 
+                  href={s.href}
                   className="inline-flex items-center gap-2 text-brand text-sm font-bold uppercase tracking-widest group-hover:gap-4 transition-all"
                 >
                   Consultar <ArrowRight size={16} />
