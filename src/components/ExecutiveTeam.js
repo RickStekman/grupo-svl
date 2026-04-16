@@ -18,7 +18,7 @@ export default function ExecutiveTeam() {
     { 
       id: 3, 
       name: "LCDO. MIGUEL E. ARMAS", 
-      role: "Director Ejecutivo", 
+      role: "Gerente de Aduanas", 
       img: "/Image/Tren3.webp"
     }
   ];
