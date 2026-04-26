@@ -60,13 +60,13 @@ export default function Navbar() {
             <Link 
               key={link.href} 
               href={link.href} 
-              className="text-sm font-bold text-white/90 hover:text-yellow-500 transition-colors uppercase tracking-widest"
+              className="text-sm font-bold text-white/90 hover:text-brand transition-colors uppercase tracking-widest"
             >
               {link.text}
             </Link>
           ))}
           <Link href="#Contact">
-            <button className="px-8 py-3 bg-brand hover:bg-dark-brand text-black font-black text-xs uppercase tracking-widest rounded-xl transition-all active:scale-95 shadow-lg shadow-yellow-500/20">
+            <button className="px-8 py-3 bg-brand-dark hover:bg-dark-brand text-black font-black text-xs uppercase tracking-widest rounded-xl transition-all active:scale-95 shadow-lg shadow-brand/20">
               CONTACTO
             </button>
           </Link>
@@ -95,7 +95,7 @@ export default function Navbar() {
                 key={link.href} 
                 href={link.href} 
                 onClick={() => setIsMenuOpen(false)}
-                className="text-2xl text-white font-light hover:text-yellow-500 transition-colors"
+                className="text-2xl text-white font-light hover:text-brand transition-colors"
               >
                 {link.text}
               </Link>

@@ -110,7 +110,7 @@ export default function ServiciosPage() {
             animate={{ opacity: 1, y: 0 }}
             className="text-5xl md:text-7xl font-black uppercase mb-6"
           >
-            Nuestros <span className="text-yellow-500">Servicios</span>
+            Nuestros <span className="text-brand">Servicios</span>
           </motion.h1>
           <p className="text-slate-400 max-w-2xl mx-auto text-lg leading-relaxed">
             Ofrecemos un ecosistema logístico completo diseñado para simplificar sus operaciones de comercio exterior en Venezuela y el mundo.
@@ -126,11 +126,11 @@ export default function ServiciosPage() {
             initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} bg-slate-900/40 border border-slate-800 rounded-[2.5rem] overflow-hidden group hover:border-yellow-500/30 transition-all duration-500`}
+            className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} bg-slate-900/40 border border-slate-800 rounded-[2.5rem] overflow-hidden group hover:border-brand/30 transition-all duration-500`}
           >
             {/* Icono y Título Lateral */}
             <div className={`lg:w-1/3 p-12 flex flex-col justify-center items-center text-center bg-gradient-to-br ${service.color}`}>
-              <div className="text-yellow-500 mb-6 group-hover:scale-110 transition-transform duration-500">
+              <div className="text-brand mb-6 group-hover:scale-110 transition-transform duration-500">
                 {service.icon}
               </div>
               <h2 className="text-3xl font-black uppercase leading-tight">{service.title}</h2>
@@ -145,7 +145,7 @@ export default function ServiciosPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {service.features.map((feature, fIndex) => (
                   <div key={fIndex} className="flex items-start gap-3 text-slate-400">
-                    <CheckCircle2 className="size-5 text-yellow-500 shrink-0 mt-1" />
+                    <CheckCircle2 className="size-5 text-brand shrink-0 mt-1" />
                     <span className="text-sm md:text-base">{feature}</span>
                   </div>
                 ))}
@@ -155,7 +155,7 @@ export default function ServiciosPage() {
               <div className="mt-10">
                 <Link 
                   href={service.href} 
-                  className="inline-flex items-center gap-2 bg-white/5 hover:bg-yellow-500 hover:text-black px-8 py-3 rounded-full font-bold transition-all text-sm uppercase tracking-widest"
+                  className="inline-flex items-center gap-2 bg-white/5 hover:bg-brand hover:text-black px-8 py-3 rounded-full font-bold transition-all text-sm uppercase tracking-widest"
                 >
                   Consultar <ArrowRight className="size-4" />
                 </Link>
@@ -167,7 +167,8 @@ export default function ServiciosPage() {
 
       {/* CALL TO ACTION FINAL */}
       <section className="container mx-auto px-6 mt-32 text-center">
-        <div className="bg-yellow-500 p-12 md:p-20 rounded-[3rem] relative overflow-hidden">
+        <div className="bg-gradient-to-br from-brand to-yellow-300 rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden group">
+        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10"></div>
           <div className="absolute top-0 right-0 p-10 opacity-10">
             <Globe className="size-64 text-black" />
           </div>

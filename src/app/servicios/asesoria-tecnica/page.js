@@ -61,41 +61,41 @@ export default function AsesoriaTecnica() {
   // DATA: Gestiones Técnicas (Incluyendo RL9, 11, 12 y 20)
   const procesosTecnicos = [
     {
-      icon: <Gavel className="size-8 text-yellow-500" />,
+      icon: <Gavel className="size-8 text-brand" />,
       title: "Reforma Aduanera G.O.E 6918",
       desc: "Análisis de impacto y recomendaciones estratégicas (Vigente 30/06/25).",
       details: "Asesoramos en la interpretación de los nuevos plazos y procedimientos de la Gaceta 6918 para evitar sanciones. Nuestro enfoque preventivo permite adaptarse a los cambios antes de que la carga llegue a puerto."
     },
     {
-      icon: <Scale className="size-8 text-yellow-500" />,
+      icon: <Scale className="size-8 text-brand" />,
       title: "Exoneración de IVA y Requisitos",
       desc: "Gestión de beneficios fiscales para importación de bienes.",
       details: "Tramitamos exoneraciones bajo lineamientos del SENIAT, asegurando que la descripción arancelaria y documentación técnica cumplan con los estándares para una aprobación sin contratiempos."
     },
     {
-      icon: <ShieldCheck className="size-8 text-yellow-500" />,
+      icon: <ShieldAlert className="size-8 text-brand" />,
+      title: "Permiso Sanitario RL3 (SALUD)",
+      desc: "Control de insumos médicos y descartables.",
+      details: "Especialistas en el Registro Sanitario para insumos médicos, validando fichas técnicas y artes para evitar bloqueos en aduana por inconsistencias."
+    },
+    {
+      icon: <ShieldCheck className="size-8 text-brand" />,
       title: "Registros Sanitarios (RL9 y RL11)",
       desc: "Gestión ante MPPS y SENCAMER.",
       details: "Tramitación de Registros Sanitarios para alimentos y cosméticos (RL9) y certificados de calidad SENCAMER (RL11) para cumplimiento de normas COVENIN."
     },
     {
-      icon: <FileSearch className="size-8 text-yellow-500" />,
+      icon: <FileSearch className="size-8 text-brand" />,
       title: "Certificado de No Producción (RL12)",
       desc: "Trámite indispensable para beneficios arancelarios.",
       details: "Coordinamos la documentación técnica para demostrar la inexistencia de producción nacional y optar a la liberación de gravámenes."
     },
     {
-      icon: <Box className="size-8 text-yellow-500" />,
+      icon: <Box className="size-8 text-brand" />,
       title: "Bienes de Capital e Informática (BK / BIT)",
       desc: "Incentivos para maquinaria y tecnología.",
       details: "Gestionamos la Clasificación Arancelaria Única para proyectos de inversión industrial o tecnológica, optimizando los costos de importación."
     },
-    {
-      icon: <ShieldAlert className="size-8 text-yellow-500" />,
-      title: "Permiso Sanitario RL3 (SALUD)",
-      desc: "Control de insumos médicos y descartables.",
-      details: "Especialistas en el Registro Sanitario para insumos médicos, validando fichas técnicas y artes para evitar bloqueos en aduana por inconsistencias."
-    }
   ];
 
   const otrosServicios = [
@@ -124,11 +124,11 @@ export default function AsesoriaTecnica() {
               animate={{ opacity: 1, x: 0 }}
               className="lg:w-2/3"
             >
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-yellow-500/10 border border-yellow-500/20 text-yellow-500 text-xs font-bold uppercase tracking-[0.2em] mb-6">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand/10 border border-yellow-500/20 text-brand text-xs font-bold uppercase tracking-[0.2em] mb-6">
                 <BookOpen className="size-4" /> Inteligencia Normativa
               </div>
               <h1 className="text-5xl md:text-7xl font-black text-white mb-6 uppercase leading-tight">
-                Asesoría <br /> <span className="text-yellow-500">Técnica Legal</span>
+                Asesoría <br /> <span className="text-brand">Técnica Legal</span>
               </h1>
               <p className="text-slate-400 text-lg md:text-xl leading-relaxed max-w-2xl">
                 Blindamos sus operaciones con análisis experto, minimizando riesgos fiscales y garantizando el cumplimiento de la regulación aduanera vigente.
@@ -136,10 +136,10 @@ export default function AsesoriaTecnica() {
             </motion.div>
             
             <div className="lg:w-1/3 grid grid-cols-2 gap-4">
-                <div className="h-32 bg-slate-900 rounded-3xl border border-slate-800 flex items-center justify-center text-yellow-500"><Scale size={40} /></div>
-                <div className="h-32 bg-yellow-500 rounded-3xl flex items-center justify-center text-black"><Gavel size={40} /></div>
-                <div className="h-32 bg-slate-900 rounded-3xl border border-slate-800 flex items-center justify-center text-yellow-500"><FileSearch size={40} /></div>
-                <div className="h-32 bg-slate-800 rounded-3xl border border-slate-700 flex items-center justify-center text-slate-400"><ShieldAlert size={40} /></div>
+                <div className="h-32 bg-slate-900 rounded-3xl border border-slate-800 flex items-center justify-center text-brand"><Scale size={40} /></div>
+                <div className="h-32 bg-brand rounded-3xl flex items-center justify-center text-black"><Gavel size={40} /></div>
+                <div className="h-32 bg-slate-900 rounded-3xl border border-slate-800 flex items-center justify-center text-brand"><FileSearch size={40} /></div>
+                <div className="h-32 bg-slate-900 rounded-3xl border border-slate-800 flex items-center justify-center text-brand"><ShieldAlert size={40} /></div>
             </div>
           </div>
         </section>
@@ -147,8 +147,8 @@ export default function AsesoriaTecnica() {
         {/* ALCANCE CONSULTIVO */}
         <section className="container mx-auto px-6 mb-32">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-black text-white uppercase italic">Nuestro <span className="text-yellow-500">Alcance Consultivo</span></h2>
-            <div className="h-1 w-20 bg-yellow-500 mx-auto mt-4"></div>
+            <h2 className="text-3xl font-black text-white uppercase italic">Nuestro <span className="text-brand">Alcance Consultivo</span></h2>
+            <div className="h-1 w-20 rounded-full bg-brand-dark mx-auto mt-4"></div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -156,9 +156,9 @@ export default function AsesoriaTecnica() {
               <motion.div 
                 key={index}
                 whileHover={{ y: -10 }}
-                className="p-8 bg-slate-900/40 border border-slate-800 rounded-[2rem] hover:border-yellow-500/50 transition-all group"
+                className="p-8 bg-slate-900/40 border border-slate-800 rounded-[2rem] hover:border-brand/50 transition-all group"
               >
-                <div className="w-14 h-14 bg-slate-950 rounded-2xl flex items-center justify-center text-yellow-500 mb-6 group-hover:bg-yellow-500 group-hover:text-black transition-all">
+                <div className="w-14 h-14 bg-slate-950 rounded-2xl flex items-center justify-center text-brand mb-6 group-hover:bg-brand group-hover:text-black transition-all">
                   {pilar.icon}
                 </div>
                 <h4 className="text-xl font-bold text-white uppercase mb-4">{pilar.title}</h4>
@@ -173,24 +173,24 @@ export default function AsesoriaTecnica() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
             <div className="lg:col-span-7">
               <div className="flex items-center gap-4 mb-10">
-                <div className="h-10 w-2 bg-yellow-500"></div>
-                <h3 className="text-3xl font-black text-white uppercase tracking-tighter">Gestiones <span className="text-yellow-500">Especializadas</span></h3>
+                <div className="h-10 w-2 bg-brand-dark"></div>
+                <h3 className="text-3xl font-black text-white uppercase tracking-tighter">Gestiones <span className="text-brand">Especializadas</span></h3>
               </div>
               
               <div className="space-y-4">
                 {procesosTecnicos.map((item, idx) => {
                   const isExpanded = expandedIndex === idx;
                   return (
-                    <div key={idx} className={`rounded-2xl border transition-all duration-300 ${isExpanded ? 'bg-slate-900 border-yellow-500/50' : 'bg-slate-900/50 border-slate-800'}`}>
+                    <div key={idx} className={`rounded-2xl border transition-all duration-300 ${isExpanded ? 'bg-slate-900 border-brand/50' : 'bg-slate-900/50 border-slate-800'}`}>
                       <button onClick={() => toggleBenefit(idx)} className="w-full flex items-center gap-6 p-6 text-left focus:outline-none">
-                        <div className={`p-3 rounded-xl transition-all ${isExpanded ? 'bg-yellow-500 text-black' : 'bg-slate-800 text-yellow-500'}`}>
+                        <div className={`p-3 rounded-xl transition-all ${isExpanded ? 'bg-slate text-black' : 'bg-slate-800 text-yellow-500'}`}>
                           {item.icon}
                         </div>
                         <div className="flex-1">
                           <h4 className="font-bold text-white uppercase text-sm tracking-widest">{item.title}</h4>
                           <p className="text-slate-500 text-xs mt-1">{item.desc}</p>
                         </div>
-                        <ChevronDown className={`text-yellow-500 transition-transform ${isExpanded ? 'rotate-180' : ''}`} />
+                        <ChevronDown className={`text-brand transition-transform ${isExpanded ? 'rotate-180' : ''}`} />
                       </button>
                       <AnimatePresence>
                         {isExpanded && (
@@ -211,8 +211,8 @@ export default function AsesoriaTecnica() {
             <div className="lg:col-span-5">
               <div className="sticky top-32 p-10 bg-[#0a0f1d] border border-slate-800 rounded-[2rem] shadow-2xl">
                 <div className="flex items-center gap-3 mb-6">
-                    <AlertCircle className="text-yellow-500" size={24} />
-                    <h4 className="text-white font-bold uppercase text-xl tracking-tight">REQUISITOS <span className="text-yellow-500">CLAVE</span></h4>
+                    <AlertCircle className="text-brand" size={24} />
+                    <h4 className="text-white font-bold uppercase text-xl tracking-tight">REQUISITOS <span className="text-brand">CLAVE</span></h4>
                 </div>
                 
                 <p className="text-slate-400 text-sm italic mb-8">
@@ -229,16 +229,16 @@ export default function AsesoriaTecnica() {
                       "Uso y destino final de los bienes (BK/BIT)."
                     ].map((text, i) => (
                         <li key={i} className="flex items-start gap-3 text-slate-300 text-sm font-medium leading-relaxed">
-                            <span className="h-1.5 w-1.5 rounded-full bg-yellow-500 mt-2 shrink-0"></span>
+                            <span className="h-1.5 w-1.5 rounded-full bg-brand mt-2 shrink-0"></span>
                             {text}
                         </li>
                     ))}
                 </ul>
 
-                <div className="p-6 bg-yellow-500/5 border border-yellow-500/20 rounded-xl flex gap-4 items-start">
+                <div className="p-6 bg-brand/5 border border-yellow-500/20 rounded-xl flex gap-4 items-start">
                     <Info className="text-yellow-500 shrink-0" size={20} />
-                    <p className="text-yellow-500/90 text-[11px] font-bold leading-relaxed">
-                      Aviso Importante: <span className="text-yellow-500/70 font-medium">Según la Reforma Aduanera G.O.E 6918, el cumplimiento documental previo es obligatorio para evitar retenciones.</span>
+                    <p className="text-brand/90 text-[11px] font-bold leading-relaxed">
+                      Aviso Importante: <span className="text-brand/70 font-medium">Según la Reforma Aduanera G.O.E 6918, el cumplimiento documental previo es obligatorio para evitar retenciones.</span>
                     </p>
                 </div>
               </div>
@@ -248,7 +248,7 @@ export default function AsesoriaTecnica() {
 
         {/* CTA */}
         <section className="container mx-auto px-6 mb-32">
-          <div className="bg-yellow-500 rounded-[4rem] p-12 md:p-20 text-center relative overflow-hidden group">
+          <div className="bg-brand rounded-[4rem] p-12 md:p-20 text-center relative overflow-hidden group">
             <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10"></div>
             <div className="relative z-10">
               <h2 className="text-4xl md:text-6xl font-black text-black uppercase mb-6 leading-tight">¿Desea una auditoría <br /> técnica de su carga?</h2>
@@ -263,16 +263,16 @@ export default function AsesoriaTecnica() {
         {/* OTROS SERVICIOS */}
         <section className="bg-slate-900/50 py-32 border-t border-slate-900">
           <div className="container mx-auto px-6 text-center">
-            <h3 className="text-white font-black uppercase text-3xl mb-16 tracking-tighter">Soluciones <span className="text-yellow-500">Complementarias</span></h3>
+            <h3 className="text-white font-black uppercase text-3xl mb-16 tracking-tighter">Soluciones <span className="text-brand">Complementarias</span></h3>
             <div className="flex flex-wrap justify-center gap-8">
               {otrosServicios.map((s, i) => (
-                <Link key={i} href={s.href} className="group p-10 bg-slate-950 border border-slate-800 rounded-[2rem] hover:border-yellow-500/50 transition-all hover:-translate-y-2 w-full sm:w-[calc(50%-2rem)] lg:w-[calc(33.33%-2rem)] xl:w-[calc(20%-2rem)]">
-                  <div className="text-yellow-500 mb-8 bg-yellow-500/10 w-16 h-16 flex items-center justify-center rounded-2xl group-hover:bg-yellow-500 group-hover:text-black transition-all">
+                <Link key={i} href={s.href} className="group p-10 bg-slate-950 border border-slate-800 rounded-[2rem] hover:border-brand/50 transition-all hover:-translate-y-2 w-full sm:w-[calc(50%-2rem)] lg:w-[calc(33.33%-2rem)] xl:w-[calc(20%-2rem)]">
+                  <div className="text-brand mb-8 bg-brand/10 w-16 h-16 flex items-center justify-center rounded-2xl group-hover:bg-brand group-hover:text-black transition-all">
                     {s.icon}
                   </div>
                   <h4 className="text-white font-bold uppercase mb-4 text-sm tracking-widest">{s.title}</h4>
                   <p className="text-slate-600 text-xs mb-6 leading-relaxed">{s.desc}</p>
-                  <div className="text-yellow-500 font-black text-[10px] uppercase tracking-[0.3em] opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2">
+                  <div className="text-brand font-black text-[10px] uppercase tracking-[0.3em] opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2">
                     Ver más <ArrowRight size={12} />
                   </div>
                 </Link>
@@ -284,7 +284,6 @@ export default function AsesoriaTecnica() {
         {/* CONTACTO */}
         <div id="Contact" className="py-32 bg-white rounded-t-[4rem] shadow-[0_-20px_50px_rgba(0,0,0,0.2)]"> 
           <div className="container mx-auto px-6 text-center">
-             <span className="text-yellow-600 font-black uppercase tracking-[0.3em] text-xs">Atención Técnica Especializada</span>
              <h2 className="text-4xl md:text-6xl font-black text-slate-900 uppercase italic mt-4">Inicie su <span className="text-yellow-600">Consulta</span></h2>
              <Contact />
           </div>

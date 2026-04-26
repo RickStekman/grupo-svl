@@ -34,25 +34,25 @@ export default function AgenciamientoAduanal() {
 
   const beneficios = [
     {
-      icon: <Zap className="size-8 text-yellow-500" />,
+      icon: <Zap className="size-8 text-brand" />,
       title: "Desaduanamiento Ágil",
       desc: "Nacionalización en tiempos récord según la modalidad.",
-      details: "Garantizamos el desaduanamiento en un promedio de 5 días para embarques marítimos y 3 días para aéreos. En casos de 'Descargas Directas', logramos la nacionalización en pocas horas."
+      details: "Garantizamos el desaduanamiento en un promedio de 5 días para embarques marítimos y 3 días para aéreos. En casos de 'Descargas Directas', logramos la nacionalización en pocas horas, siempre que la documentación esté completa."
     },
     {
-      icon: <FileText className="size-8 text-yellow-500" />,
+      icon: <FileText className="size-8 text-brand" />,
       title: "Gestión Documental",
       desc: "Preparación y verificación de permisos y manifiestos.",
       details: "Nos encargamos de la recepción y gestión eficiente de documentación en puerto, elaboración precisa de manifiestos de vuelo y preparación de permisos para pasos fronterizos, asegurando el cumplimiento legal estricto."
     },
     {
-      icon: <Monitor className="size-8 text-yellow-500" />,
+      icon: <Monitor className="size-8 text-brand" />,
       title: "Seguimiento en tiempo real",
       desc: "Control total desde la descarga hasta su almacén.",
       details: "Transmisión constante de información sobre el estatus del embarque y el movimiento del documento en las aduanas correspondientes."
     },
     {
-      icon: <ShieldCheck className="size-8 text-yellow-500" />,
+      icon: <ShieldCheck className="size-8 text-brand" />,
       title: "Supervisión Operativa",
       desc: "Personal especializado en inspecciones y manejo de carga.",
       details: "Coordinación de inspecciones rápidas con las autoridades para garantizar la fluidez del proceso de liberación en las aduanas principales."
@@ -84,12 +84,12 @@ export default function AgenciamientoAduanal() {
               animate={{ opacity: 1, x: 0 }}
               className="lg:w-3/5"
             >
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-yellow-500/10 border border-yellow-500/20 text-yellow-500 text-xs font-bold uppercase tracking-[0.2em] mb-6">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand/10 border border-yellow-500/20 text-brand text-xs font-bold uppercase tracking-[0.2em] mb-6">
                 Aéreas - Marítimas y Terrestres
               </div>
               <h1 className="text-5xl md:text-7xl font-black text-white mb-6 uppercase leading-tight">
                 Agenciamiento <br />
-                <span className="text-yellow-500">Aduanal</span>
+                <span className="text-brand-dark">Aduanal</span>
               </h1>
               <p className="text-slate-400 text-lg md:text-xl leading-relaxed max-w-2xl mb-8">
                 Operaciones expertas en las principales aduanas de Venezuela, garantizando el cumplimiento normativo y la rapidez que su cadena de suministro exige.
@@ -111,7 +111,7 @@ export default function AgenciamientoAduanal() {
         <section className="container mx-auto px-6 mb-32">
           <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
             <div className="max-w-xl">
-              <h2 className="text-3xl font-black text-white uppercase italic mb-4">Presencia en <span className="text-yellow-500 text-4xl">Aduanas Principales</span></h2>
+              <h2 className="text-3xl font-black text-white uppercase italic mb-4">Presencia en <span className="text-brand-dark text-4xl">Aduanas Principales</span></h2>
               <p className="text-slate-500">Contamos con personal propio y alianzas estratégicas para cubrir los puntos de entrada y salida más críticos del país.</p>
             </div>
             <div className="hidden md:block h-px flex-1 bg-slate-800 mx-10 mb-4" />
@@ -122,11 +122,11 @@ export default function AgenciamientoAduanal() {
               <div className="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity">
                 <Ship size={120} />
               </div>
-              <div className="p-4 bg-yellow-500/10 rounded-2xl text-yellow-500 w-fit mb-8"><Ship /></div>
+              <div className="p-4 bg-brand/10 rounded-2xl text-brand w-fit mb-8"><Ship /></div>
               <h3 className="text-2xl font-black text-white uppercase italic mb-4">Marítima</h3>
               <p className="text-slate-500 text-sm mb-6">Gestión completa en Puerto Cabello, La Guaira y Maracaibo.</p>
               <div className="py-2 px-4 rounded-lg inline-block">
-                <span className="text-yellow-500 font-bold text-xs">TIEMPO ESTIMADO: ~5 DÍAS</span>
+                <span className="text-brand font-bold text-xs">TIEMPO ESTIMADO: ~5 DÍAS</span>
               </div>
             </div>
 
@@ -134,11 +134,11 @@ export default function AgenciamientoAduanal() {
                <div className="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity">
                 <Plane size={120} />
               </div>
-              <div className="p-4 bg-yellow-500/10 rounded-2xl text-yellow-500 w-fit mb-8"><Plane /></div>
+              <div className="p-4 bg-brand/10 rounded-2xl text-brand w-fit mb-8"><Plane /></div>
               <h3 className="text-2xl font-black text-white uppercase italic mb-4">Aérea</h3>
               <p className="text-slate-500 text-sm mb-6">Operaciones directas en Maiquetía y principales terminales de carga.</p>
               <div className="py-2 px-4 rounded-lg inline-block">
-                <span className="text-yellow-500 font-bold text-xs">TIEMPO ESTIMADO: ~3 DÍAS</span>
+                <span className="text-brand font-bold text-xs">TIEMPO ESTIMADO: ~3 DÍAS</span>
               </div>
             </div>
 
@@ -146,11 +146,11 @@ export default function AgenciamientoAduanal() {
                <div className="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity">
                 <MapPin size={120} />
               </div>
-              <div className="p-4 bg-yellow-500/10 rounded-2xl text-yellow-500 w-fit mb-8"><MapPin /></div>
+              <div className="p-4 bg-brand/10 rounded-2xl text-brand w-fit mb-8"><MapPin /></div>
               <h3 className="text-2xl font-black text-white uppercase italic mb-4">Terrestre</h3>
               <p className="text-slate-500 text-sm mb-6">Control y desaduanamiento en San Antonio del Táchira y fronteras.</p>
               <div className="py-2 px-4 rounded-lg inline-block">
-                <span className="text-yellow-500 font-bold text-xs">SEGUIMIENTO EN TIEMPO REAL</span>
+                <span className="text-brand font-bold text-xs">SEGUIMIENTO EN TIEMPO REAL</span>
               </div>
             </div>
           </div>
@@ -160,9 +160,9 @@ export default function AgenciamientoAduanal() {
               <motion.div 
                 key={idx}
                 whileHover={{ y: -5 }}
-                className="p-6 bg-slate-900/50 border border-slate-800 rounded-2xl flex flex-col items-center text-center group hover:border-yellow-500/50 transition-all"
+                className="p-6 bg-slate-900/50 border border-slate-800 rounded-2xl flex flex-col items-center text-center group hover:border-brand/50 transition-all"
               >
-                <div className="p-4 bg-slate-950 rounded-xl text-yellow-500 mb-4 group-hover:scale-110 transition-transform">
+                <div className="p-4 bg-slate-950 rounded-xl text-brand mb-4 group-hover:scale-110 transition-transform">
                   {aduana.icon}
                 </div>
                 <h4 className="text-white font-bold text-xs uppercase tracking-tight mb-2 leading-tight">{aduana.name}</h4>
@@ -177,7 +177,7 @@ export default function AgenciamientoAduanal() {
         <section className="container mx-auto px-6 mb-32 flex flex-col lg:flex-row gap-16">
           <div className="lg:w-1/3">
              <h2 className="text-4xl font-black text-white uppercase leading-none mb-6">
-               Nuestra <br /> <span className="text-yellow-500 italic text-5xl">Garantía</span>
+               Nuestra <br /> <span className="text-brand italic text-5xl">Garantía</span>
              </h2>
              <p className="text-slate-500">Más de 20 años optimizando procesos de nacionalización y exportación.</p>
           </div>
@@ -185,16 +185,16 @@ export default function AgenciamientoAduanal() {
             {beneficios.map((item, idx) => {
               const isExpanded = expandedIndex === idx;
               return (
-                <div key={idx} className={`rounded-3xl border transition-all duration-300 ${isExpanded ? 'bg-slate-900 border-yellow-500/50 shadow-2xl shadow-yellow-500/5' : 'bg-slate-900/40 border-slate-800'}`}>
+                <div key={idx} className={`rounded-3xl border transition-all duration-300 ${isExpanded ? 'bg-slate-900 border-brand/50 shadow-2xl shadow-brand/5' : 'bg-slate-900/40 border-slate-800'}`}>
                   <button onClick={() => toggleBenefit(idx)} className="w-full flex items-center gap-6 p-8 text-left focus:outline-none">
-                    <div className={`p-3 rounded-2xl transition-all duration-500 ${isExpanded ? 'bg-yellow-500 text-black' : 'bg-slate-800 text-yellow-500'}`}>
+                    <div className={`p-3 rounded-2xl transition-all duration-500 ${isExpanded ? 'bg-slate text-black' : 'bg-slate-800 text-brand'}`}>
                       {item.icon}
                     </div>
                     <div className="flex-1">
                       <h4 className="text-xl font-bold text-white uppercase">{item.title}</h4>
                       <p className="text-slate-500 text-sm">{item.desc}</p>
                     </div>
-                    <div className={`text-yellow-500 transition-transform duration-500 ${isExpanded ? 'rotate-180' : ''}`}>
+                    <div className={`text-brand transition-transform duration-500 ${isExpanded ? 'rotate-180' : ''}`}>
                       <ChevronDown size={28} />
                     </div>
                   </button>
@@ -202,7 +202,7 @@ export default function AgenciamientoAduanal() {
                     {isExpanded && (
                       <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }} exit={{ height: 0, opacity: 0 }}>
                         <div className="px-8 pb-8 pt-2 md:ml-[92px]">
-                          <p className="text-slate-400 leading-relaxed border-l-2 border-yellow-500/30 pl-6">{item.details}</p>
+                          <p className="text-slate-400 leading-relaxed border-l-2 border-brand pl-6">{item.details}</p>
                         </div>
                       </motion.div>
                     )}
@@ -215,7 +215,7 @@ export default function AgenciamientoAduanal() {
 
         {/* CTA REFINADO */}
         <section className="container mx-auto px-6 mb-32">
-          <div className="bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden group">
+          <div className="bg-gradient-to-br from-brand to-yellow-600 rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden group">
             <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10"></div>
             <div className="relative z-10">
               <h2 className="text-4xl md:text-6xl font-black text-black uppercase mb-6 leading-tight">
@@ -234,16 +234,16 @@ export default function AgenciamientoAduanal() {
         {/* OTROS SERVICIOS (GRID) */}
         <section className="bg-slate-900/50 py-32 border-t border-slate-900">
           <div className="container mx-auto px-6 text-center">
-            <h3 className="text-white font-black uppercase text-3xl mb-16 tracking-tighter">Soluciones <span className="text-yellow-500">Complementarias</span></h3>
+            <h3 className="text-white font-black uppercase text-3xl mb-16 tracking-tighter">Soluciones <span className="text-brand">Complementarias</span></h3>
             <div className="flex flex-wrap justify-center gap-8">
               {otrosServicios.map((s, i) => (
-                <Link key={i} href={s.href} className="group p-10 bg-slate-950 border border-slate-800 rounded-[2rem] hover:border-yellow-500/50 transition-all hover:-translate-y-2 w-full sm:w-[calc(50%-2rem)] lg:w-[calc(33.33%-2rem)] xl:w-[calc(20%-2rem)]">
-                  <div className="text-yellow-500 mb-8 bg-yellow-500/10 w-16 h-16 flex items-center justify-center rounded-2xl group-hover:bg-yellow-500 group-hover:text-black transition-all">
+                <Link key={i} href={s.href} className="group p-10 bg-slate-950 border border-slate-800 rounded-[2rem] hover:border-brand/50 transition-all hover:-translate-y-2 w-full sm:w-[calc(50%-2rem)] lg:w-[calc(33.33%-2rem)] xl:w-[calc(20%-2rem)]">
+                  <div className="text-brand mb-8 bg-brand/10 w-16 h-16 flex items-center justify-center rounded-2xl group-hover:bg-brand group-hover:text-black transition-all">
                     {s.icon}
                   </div>
                   <h4 className="text-white font-bold uppercase mb-4 text-sm tracking-widest">{s.title}</h4>
                   <p className="text-slate-600 text-xs mb-6 leading-relaxed">{s.desc}</p>
-                  <div className="text-yellow-500 font-black text-[10px] uppercase tracking-[0.3em] opacity-0 group-hover:opacity-100 transition-opacity">
+                  <div className="text-brand font-black text-[10px] uppercase tracking-[0.3em] opacity-0 group-hover:opacity-100 transition-opacity">
                     Ver más
                   </div>
                 </Link>
