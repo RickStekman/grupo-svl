@@ -13,35 +13,39 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  // 1. Título e información para Google (SEO)
-  title: "GRUPO S.V.L. | Operador Logístico Integral – Servicios Logísticos Multimodales",
-  description: "GRUPO S.V.L. se especializa en servicios logísticos multimodales: manejo de carga nacional e internacional, agenciamiento aduanal, transporte terrestre y soluciones de cadena de suministro. Conectamos su negocio con el mundo.",
-  keywords: ["logística", "transporte multimodal", "aduana", "Venezuela", "carga internacional"],
+  metadataBase: new URL('https://www.gruposvl.com'), // Ayuda a que las rutas de imágenes sean absolutas
+  title: {
+    default: "GRUPO S.V.L. | Operador Logístico Integral en Venezuela",
+    template: "%s | GRUPO S.V.L." // Esto permite que subpáginas tengan títulos como "Servicios | GRUPO S.V.L."
+  },
+  description: "Especialistas en servicios logísticos multimodales en Venezuela: agenciamiento aduanal, transporte terrestre nacional e internacional y manejo de carga segura.",
+  keywords: ["logística Venezuela", "agente aduanal puerto cabello", "transporte de carga", "aduana la guaira", "operador logístico"],
+  
+  alternates: {
+    canonical: '/',
+  },
 
-  // 2. Iconos de la web (Favicon)
   icons: {
     icon: "/Image/logosvl 32x32-01.webp",
     apple: "/Image/logosvl 180x180-01.webp",
   },
 
-  // 3. Imágenes para compartir (Open Graph)
   openGraph: {
-    title: "GRUPO S.V.L. | Operador Logístico Integral",
-    description: "Soluciones logísticas integrales y transporte multimodal.",
+    title: "GRUPO S.V.L. | Conectamos su negocio con el mundo",
+    description: "Soluciones integrales de transporte y aduana con cobertura nacional e internacional.",
     url: "https://www.gruposvl.com",
     siteName: "Grupo S.V.L.",
     images: [
       {
-        url: "/Image/logosvl 180x180-01.webp",
-        width: 800,
-        height: 600,
-        alt: "Logo Grupo S.V.L.",
+        url: "/Image/logosvl 180x180-01.webp", // Recomendado usar una imagen de 1200x630 para mejor visualización
+        width: 1200,
+        height: 630,
+        alt: "Logística Integral Grupo S.V.L.",
       },
     ],
     locale: "es_VE",
     type: "website",
   },
-
   // 4. Configuración para Twitter
   twitter: {
     card: "summary_large_image",
