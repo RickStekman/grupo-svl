@@ -2,8 +2,7 @@ import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
 import Services from '@/components/Services';
-import Exports from '@/components/Exports';
-import Imports from '@/components/Imports';
+import Processes from '@/components/Processes';
 import News from '@/components/News';
 import ExecutiveTeam from '@/components/ExecutiveTeam';
 import Testimonials from '@/components/Testimonials';
@@ -21,8 +20,7 @@ export default function Home() {
       <main>
         <About />
         <Services />
-        <Exports />
-        <Imports />
+        <Processes />
         <News />
         <Testimonials />
         <Gallery />

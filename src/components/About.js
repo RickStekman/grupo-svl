@@ -110,7 +110,7 @@ export default function About() {
               ))}
             </div>
 
-            <Link href="#Contact" className="inline-block px-10 py-4 bg-slate-900 hover:bg-yellow-500 hover:text-black text-white font-bold rounded-lg transition-all shadow-lg text-xs uppercase tracking-widest">
+            <Link href="/about" className="inline-block px-10 py-4 bg-slate-900 hover:bg-yellow-500 hover:text-black text-white font-bold rounded-lg transition-all shadow-lg text-xs uppercase tracking-widest">
               Ver Más
             </Link>
           </motion.div>

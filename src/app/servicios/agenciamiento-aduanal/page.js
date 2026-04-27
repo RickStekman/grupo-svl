@@ -102,7 +102,7 @@ export default function AgenciamientoAduanal() {
               animate={{ opacity: 1, scale: 1 }}
               className="lg:w-2/5 w-full h-[400px] rounded-3xl overflow-hidden border border-slate-800 shadow-2xl shadow-yellow-500/5"
             >
-              <img src="/Image/Gallery/foto06.webp" alt="Operaciones Aduanales" className="w-full h-full object-cover" />
+              <img src="/Image/Gallery/cede02.webp" alt="Operaciones Aduanales" className="w-full h-full object-cover" />
             </motion.div>
           </div>
         </section>
