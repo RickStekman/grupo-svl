@@ -110,7 +110,7 @@ export default function ServiciosPage() {
             animate={{ opacity: 1, y: 0 }}
             className="text-5xl md:text-7xl font-black uppercase mb-6"
           >
-            Nuestros <span className="text-brand">Servicios</span>
+            Nuestros <span className="text-brand-dark">Servicios</span>
           </motion.h1>
           <p className="text-slate-400 max-w-2xl mx-auto text-lg leading-relaxed">
             Ofrecemos un ecosistema logístico completo diseñado para simplificar sus operaciones de comercio exterior en Venezuela y el mundo.

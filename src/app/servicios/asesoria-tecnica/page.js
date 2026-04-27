@@ -114,7 +114,7 @@ export default function AsesoriaTecnica() {
         
         {/* HERO */}
         <section className="container mx-auto px-6 mb-24 relative">
-          <Link href="/#servicios" className="inline-flex items-center gap-2 text-slate-400 hover:text-yellow-500 transition-colors mb-8 font-bold text-sm uppercase tracking-widest group">
+          <Link href="/servicios" className="inline-flex items-center gap-2 text-slate-400 hover:text-brand transition-colors mb-8 font-bold text-sm uppercase tracking-widest group">
             <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform" /> Volver a Servicios
           </Link>
           
@@ -128,7 +128,7 @@ export default function AsesoriaTecnica() {
                 <BookOpen className="size-4" /> Inteligencia Normativa
               </div>
               <h1 className="text-5xl md:text-7xl font-black text-white mb-6 uppercase leading-tight">
-                Asesoría <br /> <span className="text-brand">Técnica Legal</span>
+                Asesoría <br /> <span className="text-brand-dark">Técnica Legal</span>
               </h1>
               <p className="text-slate-400 text-lg md:text-xl leading-relaxed max-w-2xl">
                 Blindamos sus operaciones con análisis experto, minimizando riesgos fiscales y garantizando el cumplimiento de la regulación aduanera vigente.

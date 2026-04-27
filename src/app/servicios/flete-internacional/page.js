@@ -61,7 +61,7 @@ export default function FleteInternacional() {
         
         {/* HERO */}
         <section className="container mx-auto px-6 mb-16 relative">
-          <Link href="/#servicios" className="inline-flex items-center gap-2 text-slate-400 hover:text-yellow-500 transition-colors mb-8 font-bold text-sm uppercase tracking-widest group">
+          <Link href="/servicios" className="inline-flex items-center gap-2 text-slate-400 hover:text-brand transition-colors mb-8 font-bold text-sm uppercase tracking-widest group">
             <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform" /> Volver a Servicios
           </Link>
           

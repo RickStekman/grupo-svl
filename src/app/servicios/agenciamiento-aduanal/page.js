@@ -74,7 +74,7 @@ export default function AgenciamientoAduanal() {
         
         {/* HERO SECTION MEJORADA */}
         <section className="container mx-auto px-6 mb-24">
-          <Link href="/#servicios" className="inline-flex items-center gap-2 text-slate-400 hover:text-yellow-500 transition-colors mb-8 font-bold text-sm uppercase tracking-widest group">
+          <Link href="/servicios" className="inline-flex items-center gap-2 text-slate-400 hover:text-brand transition-colors mb-8 font-bold text-sm uppercase tracking-widest group">
             <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform" /> Volver a Servicios
           </Link>
           
@@ -231,20 +231,25 @@ export default function AgenciamientoAduanal() {
           </div>
         </section>
 
-        {/* OTROS SERVICIOS (GRID) */}
-        <section className="bg-slate-900/50 py-32 border-t border-slate-900">
-          <div className="container mx-auto px-6 text-center">
-            <h3 className="text-white font-black uppercase text-3xl mb-16 tracking-tighter">Soluciones <span className="text-brand">Complementarias</span></h3>
-            <div className="flex flex-wrap justify-center gap-8">
+        {/* OTROS SERVICIOS */}
+        <section className="bg-slate-900/30 py-24 border-y border-slate-900">
+          <div className="container mx-auto px-6">
+            <h3 className="text-center text-white font-black uppercase tracking-tighter text-2xl mb-12">Soluciones <span className="text-brand">Logísticas</span></h3>
+            
+            <div className="flex flex-wrap justify-center gap-6">
               {otrosServicios.map((s, i) => (
-                <Link key={i} href={s.href} className="group p-10 bg-slate-950 border border-slate-800 rounded-[2rem] hover:border-brand/50 transition-all hover:-translate-y-2 w-full sm:w-[calc(50%-2rem)] lg:w-[calc(33.33%-2rem)] xl:w-[calc(20%-2rem)]">
-                  <div className="text-brand mb-8 bg-brand/10 w-16 h-16 flex items-center justify-center rounded-2xl group-hover:bg-brand group-hover:text-black transition-all">
+                <Link 
+                  key={i} 
+                  href={s.href} 
+                  className="group p-8 bg-slate-950 border border-slate-800 rounded-2xl hover:border-brand/50 transition-all hover:-translate-y-1 w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(33.33%-1.5rem)] xl:w-[calc(20%-1.5rem)] min-w-[250px]"
+                >
+                  <div className="text-brand mb-6 bg-brand/10 w-12 h-12 flex items-center justify-center rounded-xl group-hover:scale-110 transition-transform">
                     {s.icon}
                   </div>
-                  <h4 className="text-white font-bold uppercase mb-4 text-sm tracking-widest">{s.title}</h4>
-                  <p className="text-slate-600 text-xs mb-6 leading-relaxed">{s.desc}</p>
-                  <div className="text-brand font-black text-[10px] uppercase tracking-[0.3em] opacity-0 group-hover:opacity-100 transition-opacity">
-                    Ver más
+                  <h4 className="text-white font-bold uppercase mb-2 text-sm">{s.title}</h4>
+                  <p className="text-slate-500 text-xs mb-4">{s.desc}</p>
+                  <div className="flex items-center gap-2 text-brand/50 text-[10px] font-black uppercase tracking-[0.2em] group-hover:text-brand transition-colors">
+                    Saber más <ArrowRight size={12} />
                   </div>
                 </Link>
               ))}
