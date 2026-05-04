@@ -28,17 +28,17 @@ export default function ProcesosPage() {
       type: "Importación",
       title: "Repuestos Línea Blanca, Gris y Marrón",
       location: "Centro Logístico Nacional",
-      desc: "Nacionalización y despacho estratégico de repuestos para los principales fabricantes y distribuidores del país.[cite: 5]",
+      desc: "Nacionalización y despacho estratégico de repuestos para los principales fabricantes y distribuidores del país.",
       longDesc: "Gestionamos el ingreso de componentes críticos para la industria de electrodomésticos (línea blanca), electrónica (línea marrón) y equipos de oficina (línea gris). Optimizamos la cadena desde el puerto hasta el fabricante, asegurando que el flujo de producción no se detenga.",
       icon: <Package className="size-10" />,
       color: "from-blue-600/20 to-transparent",
       mainImage: "/Image/ImpMaritimaGua/foto(8).webp",
       features: ["Logística Just-in-Time.", "Atención a fabricantes y productores.", "Despacho a nivel nacional."],
-      details: "Se coordinó la clasificación arancelaria de piezas multimarca y la logística de última milla para un distribuidor líder, reduciendo tiempos de entrega en un 20%.[cite: 5]",
+      details: "Se coordinó la clasificación arancelaria de piezas multimarca y la logística de última milla para un distribuidor líder, reduciendo tiempos de entrega en un 20%.",
       gallery: [
-        "/Image/ImpMaritimaGua/foto(10).webp", "/Image/ImpMaritimaGua/foto(2).webp",
-        "/Image/ImpMaritimaGua/foto(3).webp", "/Image/ImpMaritimaGua/foto(4).webp",
-        "/Image/ImpMaritimaGua/foto(5).webp", "/Image/ImpMaritimaGua/foto(9).webp"
+        "/Image/ImpMaritimaGua/Foto(10).webp", "/Image/ImpMaritimaGua/Foto(2).webp",
+        "/Image/ImpMaritimaGua/Foto(3).webp", "/Image/ImpMaritimaGua/Foto(4).webp",
+        "/Image/ImpMaritimaGua/Foto(5).webp", "/Image/ImpMaritimaGua/Foto(9).webp"
       ]
     },
     {
@@ -46,17 +46,17 @@ export default function ProcesosPage() {
       type: "Importación",
       title: "Logística para Industria Farmacéutica",
       location: "Aduana Marítima de La Guaira",
-      desc: "Trámite de regímenes legales especiales y reconocimiento de productos farmacéuticos.[cite: 5]",
+      desc: "Trámite de regímenes legales especiales y reconocimiento de productos farmacéuticos.",
       longDesc: "Operación de alta complejidad que incluye la gestión ante entes reguladores para el ingreso de medicamentos y materia prima para laboratorios. Cumplimos con los protocolos de reconocimiento en la aduana marítima de La Guaira, priorizando la integridad de la carga.",
       icon: <Activity className="size-10" />,
       color: "from-green-600/20 to-transparent",
-      mainImage: "/Image/ImpTraminteFarm/foto(1).webp",
+      mainImage: "/Image/ImpTraminteFarm/Foto(1).webp",
       features: ["Gestión de Régimen Legal.", "Control sanitario estricto.", "Reconocimiento físico priorizado."],
-      details: "Logramos la nacionalización de insumos médicos críticos cumpliendo con toda la permisología sanitaria exigida por la ley venezolana en tiempo récord.[cite: 5]",
+      details: "Logramos la nacionalización de insumos médicos críticos cumpliendo con toda la permisología sanitaria exigida por la ley venezolana en tiempo récord.",
       gallery: [
-        "/Image/ImpTraminteFarm/foto(5).webp", "/Image/ImpTraminteFarm/foto(9).webp",
-        "/Image/ImpTraminteFarm/foto(3).webp", "/Image/ImpTraminteFarm/foto(6).webp",
-        "/Image/ImpTraminteFarm/foto(10).webp", "/Image/ImpTraminteFarm/foto(7).webp"
+        "/Image/ImpTraminteFarm/Foto(5).webp", "/Image/ImpTraminteFarm/Foto(9).webp",
+        "/Image/ImpTraminteFarm/Foto(3).webp", "/Image/ImpTraminteFarm/Foto(6).webp",
+        "/Image/ImpTraminteFarm/Foto(10).webp", "/Image/ImpTraminteFarm/Foto(7).webp"
       ]
     },
     {
@@ -64,17 +64,17 @@ export default function ProcesosPage() {
       type: "Importación",
       title: "Sector Automotriz y Autopartes",
       location: "Aduana de Puerto Cabello",
-      desc: "Nacionalización marítima y transporte seguro para el sector automotriz nacional.[cite: 5]",
+      desc: "Nacionalización marítima y transporte seguro para el sector automotriz nacional.",
       longDesc: "Desarrollamos la logística integral para distribuidores de repuestos y vehículos. Desde la recepción en Puerto Cabello hasta el despacho final, garantizamos seguridad y agilidad en cada paso del proceso aduanal.",
       icon: <Truck className="size-10" />,
       color: "from-yellow-600/20 to-transparent",
-      mainImage: "/Image/OpMaritimaPC/foto(1).webp",
+      mainImage: "/Image/OpMaritimaPC/Foto(1).webp",
       features: ["Nacionalización en Puerto Cabello.", "Transporte de carga pesada.", "Seguimiento satelital de despacho."],
-      details: "Coordinación de operativos de carga suelta y contenedores para asegurar el abastecimiento de repuestos originales a redes de concesionarios.[cite: 5]",
+      details: "Coordinación de operativos de carga suelta y contenedores para asegurar el abastecimiento de repuestos originales a redes de concesionarios.",
       gallery: [
-        "/Image/OpMaritimaPC/foto(2).webp", "/Image/OpMaritimaPC/foto(5).webp",
-        "/Image/OpMaritimaPC/foto(3).webp", "/Image/OpMaritimaPC/foto(6).webp",
-        "/Image/OpMaritimaPC/foto(4).webp", "/Image/OpMaritimaPC/foto(1).webp"
+        "/Image/OpMaritimaPC/Foto(2).webp", "/Image/OpMaritimaPC/Foto(5).webp",
+        "/Image/OpMaritimaPC/Foto(3).webp", "/Image/OpMaritimaPC/Foto(6).webp",
+        "/Image/OpMaritimaPC/Foto(4).webp", "/Image/OpMaritimaPC/Foto(1).webp"
       ]
     },
     {
@@ -82,27 +82,27 @@ export default function ProcesosPage() {
       type: "Exportación",
       title: "Exportación de Materia Prima Química",
       location: "Terminal de Exportación Marítima",
-      desc: "Gestión de flete internacional y protocolos de seguridad antidrogas para productos químicos.[cite: 5]",
+      desc: "Gestión de flete internacional y protocolos de seguridad antidrogas para productos químicos.",
       longDesc: "Llevamos la producción nacional de materia prima química a mercados globales. Esta operación incluye la coordinación de inspecciones especiales de unidades antidrogas y la gestión de fletes marítimos competitivos para el productor nacional.",
       icon: <Globe className="size-10" />,
       color: "from-purple-600/20 to-transparent",
-      mainImage: "/Image/ExpMarinaQuim/foto(2).webp",
+      mainImage: "/Image/ExpMarinaQuim/Foto(2).webp",
       features: ["Reconocimiento antidroga.", "Flete marítimo de exportación.", "Soporte a productores locales."],
-      details: "Aseguramos el flujo de exportación de productos químicos cumpliendo con los estándares internacionales de seguridad y las regulaciones locales de salida.[cite: 5]",
+      details: "Aseguramos el flujo de exportación de productos químicos cumpliendo con los estándares internacionales de seguridad y las regulaciones locales de salida.",
       gallery: [
-        "/Image/ExpMarinaQuim/foto(3).webp", "/Image/ExpMarinaQuim/foto(13).webp",
-        "/Image/ExpMarinaQuim/foto(1).webp", "/Image/ExpMarinaQuim/foto(20).webp",
-        "/Image/ExpMarinaQuim/foto(7).webp", "/Image/ExpMarinaQuim/foto(21).webp"
+        "/Image/ExpMarinaQuim/Foto(3).webp", "/Image/ExpMarinaQuim/Foto(13).webp",
+        "/Image/ExpMarinaQuim/Foto(1).webp", "/Image/ExpMarinaQuim/Foto(20).webp",
+        "/Image/ExpMarinaQuim/Foto(7).webp", "/Image/ExpMarinaQuim/Foto(21).webp"
       ]
     }
   ];
 
   const galleryGlobal = [
-    { src: "/Image/OpMaritimaPC/foto(1).webp", title: "Carga en Puerto", location: "Puerto Cabello" },
-    { src: "/Image/ImpMaritimaGua/foto(2).webp", title: "Inspección de Contenedor", location: "La Guaira" },
-    { src: "/Image/ExpMarinaQuim/foto(3).webp", title: "Nacionalización Aérea", location: "Maiquetía" },
-    { src: "/Image/ImpMaritimaGua/foto(4).webp", title: "Logística Terrestre", location: "Valencia" },
-    { src: "/Image/ImpMaritimaGua/foto(5).webp", title: "Desaduanamiento", location: "Maracaibo" },
+    { src: "/Image/OpMaritimaPC/Foto(1).webp", title: "Carga en Puerto", location: "Puerto Cabello" },
+    { src: "/Image/ImpMaritimaGua/Foto(2).webp", title: "Inspección de Contenedor", location: "La Guaira" },
+    { src: "/Image/ExpMarinaQuim/Foto(3).webp", title: "Nacionalización Aérea", location: "Maiquetía" },
+    { src: "/Image/ImpMaritimaGua/Foto(4).webp", title: "Logística Terrestre", location: "Valencia" },
+    { src: "/Image/ImpMaritimaGua/Foto(5).webp", title: "Desaduanamiento", location: "Maracaibo" },
   ];
 
   return (
@@ -131,7 +131,7 @@ export default function ProcesosPage() {
               Nuestros <span className="text-brand-dark">Casos de Éxito</span>
             </motion.h1>
             <p className="text-slate-400 max-w-2xl mx-auto text-sm md:text-lg leading-relaxed">
-              Experiencia real en aduanas aéreas, marítimas y terrestres para los sectores más exigentes de Venezuela.[cite: 5]
+              Experiencia real en aduanas aéreas, marítimas y terrestres para los sectores más exigentes de Venezuela.
             </p>
           </div>
         </section>

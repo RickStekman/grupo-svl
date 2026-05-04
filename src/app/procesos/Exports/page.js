@@ -90,11 +90,11 @@ export default function ExportPage() {
   ];
 
   const galleryGlobal = [
-    { src: "/Image/ExpMarinaQuim/foto(2).webp", title: "Carga de Químicos", location: "Puerto Cabello" },
-    { src: "/Image/ExpMarinaQuim/foto(3).webp", title: "Inspección de Exportación", location: "La Guaira" },
-    { src: "/Image/OpMaritimaPC/foto(5).webp", title: "Embarque Internacional", location: "Puerto Cabello" },
-    { src: "/Image/ExpMarinaQuim/foto(7).webp", title: "Verificación de Sellos", location: "Valencia" },
-    { src: "/Image/ExpMarinaQuim/foto(13).webp", title: "Logística de Salida", location: "Maiquetía" },
+    { src: "/Image/ExpMarinaQuim/Foto(2).webp", title: "Carga de Químicos", location: "Puerto Cabello" },
+    { src: "/Image/ExpMarinaQuim/Foto(3).webp", title: "Inspección de Exportación", location: "La Guaira" },
+    { src: "/Image/OpMaritimaPC/Foto(5).webp", title: "Embarque Internacional", location: "Puerto Cabello" },
+    { src: "/Image/ExpMarinaQuim/Foto(7).webp", title: "Verificación de Sellos", location: "Valencia" },
+    { src: "/Image/ExpMarinaQuim/Foto(13).webp", title: "Logística de Salida", location: "Maiquetía" },
   ];
 
   return (
@@ -121,7 +121,7 @@ export default function ExportPage() {
               Ciclo de <span className="text-brand-dark">Exportación</span>
             </h1>
             <p className="text-slate-400 text-lg md:text-xl leading-relaxed max-w-2xl italic">
-              Potenciamos la salida de sus productos nacionales mediante un flujo operativo robusto y blindado ante las exigencias de seguridad global.[cite: 5]
+              Potenciamos la salida de sus productos nacionales mediante un flujo operativo robusto y blindado ante las exigencias de seguridad global.
             </p>
           </motion.div>
         </section>
@@ -243,7 +243,7 @@ export default function ExportPage() {
                 ¿Listo para Exportar?
               </h2>
               <p className="text-black/70 mb-10 max-w-xl mx-auto font-medium text-lg italic">
-                Garantizamos que su producción nacional cumpla con todos los estándares internacionales para un despacho exitoso.[cite: 5]
+                Garantizamos que su producción nacional cumpla con todos los estándares internacionales para un despacho exitoso.
               </p>
               <Link href="#Contact" className="inline-flex items-center gap-4 px-12 py-5 bg-black text-white font-black uppercase text-sm tracking-[0.2em] rounded-2xl hover:scale-105 transition-all shadow-2xl">
                 Consultar Despacho <ArrowRight size={20} />

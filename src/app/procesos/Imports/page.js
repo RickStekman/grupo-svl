@@ -78,11 +78,11 @@ export default function ImportsPage() {
   ];
 
   const galleryGlobal = [
-    { src: "/Image/OpMaritimaPC/foto(1).webp", title: "Carga en Puerto", location: "Puerto Cabello" },
-    { src: "/Image/ImpMaritimaGua/foto(2).webp", title: "Inspección de Contenedor", location: "La Guaira" },
-    { src: "/Image/ExpMarinaQuim/foto(3).webp", title: "Nacionalización Aérea", location: "Maiquetía" },
-    { src: "/Image/ImpMaritimaGua/foto(4).webp", title: "Logística Terrestre", location: "Valencia" },
-    { src: "/Image/ImpMaritimaGua/foto(5).webp", title: "Desaduanamiento", location: "Maracaibo" },
+    { src: "/Image/OpMaritimaPC/Foto(1).webp", title: "Carga en Puerto", location: "Puerto Cabello" },
+    { src: "/Image/ImpMaritimaGua/Foto(2).webp", title: "Inspección de Contenedor", location: "La Guaira" },
+    { src: "/Image/ExpMarinaQuim/Foto(3).webp", title: "Nacionalización Aérea", location: "Maiquetía" },
+    { src: "/Image/ImpMaritimaGua/Foto(4).webp", title: "Logística Terrestre", location: "Valencia" },
+    { src: "/Image/ImpMaritimaGua/Foto(5).webp", title: "Desaduanamiento", location: "Maracaibo" },
   ];
 
   return (
@@ -109,7 +109,7 @@ export default function ImportsPage() {
               Proceso de <span className="text-brand">Importación</span>
             </h1>
             <p className="text-slate-400 text-lg md:text-xl leading-relaxed max-w-2xl italic">
-              Gestionamos el ingreso de su carga al territorio nacional con precisión técnica, garantizando el cumplimiento de la normativa aduanera venezolana.[cite: 5]
+              Gestionamos el ingreso de su carga al territorio nacional con precisión técnica, garantizando el cumplimiento de la normativa aduanera venezolana.
             </p>
           </div>
         </section>
@@ -207,7 +207,7 @@ export default function ImportsPage() {
                 ¿Mercancía en camino?
               </h2>
               <p className="text-black/70 mb-10 max-w-xl mx-auto font-medium text-lg italic">
-                Asegure un proceso de nacionalización sin complicaciones con nuestro equipo de expertos aduanales.[cite: 5]
+                Asegure un proceso de nacionalización sin complicaciones con nuestro equipo de expertos aduanales.
               </p>
               <Link href="#Contact" className="inline-flex items-center gap-4 px-12 py-5 bg-black text-white font-black uppercase text-sm tracking-[0.2em] rounded-2xl hover:scale-105 transition-all shadow-2xl">
                 Solicitar Asesoría <ArrowRight size={20} />
