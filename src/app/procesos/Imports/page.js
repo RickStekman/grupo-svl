@@ -187,9 +187,9 @@ export default function ImportsPage() {
                 <div className="bg-slate-900/50 backdrop-blur-md p-8 md:p-10 rounded-[1.9rem] border border-slate-800 flex flex-col md:flex-row items-center justify-between gap-8">
                     <div className="text-center md:text-left">
                         <h4 className="text-white font-black uppercase italic text-xl mb-2">¿Su empresa también exporta productos?</h4>
-                        <p className="text-slate-400 text-sm italic">Conozca nuestro flujo especializado para salidas internacionales.[cite: 5]</p>
+                        <p className="text-slate-400 text-sm italic">Conozca nuestro flujo especializado para salidas internacionales.</p>
                     </div>
-                    <Link href="/procesos/Export">
+                    <Link href="/procesos/Exports">
                         <button className="group flex items-center gap-3 px-8 py-4 bg-slate-950 border border-brand/50 text-brand font-black uppercase text-xs tracking-widest rounded-xl hover:bg-brand hover:text-black transition-all">
                             Ver proceso de Exportación <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
                         </button>

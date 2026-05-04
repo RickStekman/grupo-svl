@@ -32,7 +32,7 @@ export default function ProcesosPage() {
       longDesc: "Gestionamos el ingreso de componentes críticos para la industria de electrodomésticos (línea blanca), electrónica (línea marrón) y equipos de oficina (línea gris). Optimizamos la cadena desde el puerto hasta el fabricante, asegurando que el flujo de producción no se detenga.",
       icon: <Package className="size-10" />,
       color: "from-blue-600/20 to-transparent",
-      mainImage: "/Image/ImpMaritimaGua/foto(8).webp",
+      mainImage: "/Image/ImpMaritimaGua/Foto(8).webp",
       features: ["Logística Just-in-Time.", "Atención a fabricantes y productores.", "Despacho a nivel nacional."],
       details: "Se coordinó la clasificación arancelaria de piezas multimarca y la logística de última milla para un distribuidor líder, reduciendo tiempos de entrega en un 20%.",
       gallery: [

@@ -26,11 +26,11 @@ const Processes = () => {
   ];
 
   const gallery = [
-    { src: "/Image/OpMaritimaPC/foto(1).webp", title: "Carga en Puerto", location: "Puerto Cabello" },
-    { src: "/Image/ImpMaritimaGua/foto(2).webp", title: "Inspección de Contenedor", location: "La Guaira" },
-    { src: "/Image/ExpMarinaQuim/foto(3).webp", title: "Nacionalización Aérea", location: "Maiquetía" },
-    { src: "/Image/ImpMaritimaGua/foto(4).webp", title: "Logística Terrestre", location: "Guaira" },
-    { src: "/Image/ImpMaritimaGua/foto(5).webp", title: "Desaduanamiento", location: "Maracaibo" },
+    { src: "/Image/OpMaritimaPC/Foto(1).webp", title: "Carga en Puerto", location: "Puerto Cabello" },
+    { src: "/Image/ImpMaritimaGua/Foto(2).webp", title: "Inspección de Contenedor", location: "La Guaira" },
+    { src: "/Image/ExpMarinaQuim/Foto(3).webp", title: "Nacionalización Aérea", location: "Maiquetía" },
+    { src: "/Image/ImpMaritimaGua/Foto(4).webp", title: "Logística Terrestre", location: "Guaira" },
+    { src: "/Image/ImpMaritimaGua/Foto(5).webp", title: "Desaduanamiento", location: "Maracaibo" },
   ];
 
   // Duplicamos el array para el efecto de scroll infinito

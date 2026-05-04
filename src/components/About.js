@@ -14,13 +14,13 @@ const philosophy = [
     id: "02",
     title: "VISIÓN",
     description: "Ser la empresa prestadora de servicios de soporte logístico de aduanas especializado líder en el mercado, reconocida por brindar procesos eficientes y eficaces que conectan mercados globales.",
-    image: "/Image/Gallery/foto04.webp",
+    image: "/Image/ExpMarinaQuim/Foto(2).webp",
   },
   {
     id: "03",
     title: "OBJETIVOS",
     description: "Ofrecemos soluciones logísticas especializadas, garantizando gestión integral, estándares eficientes y sincronización con los sistemas de nuestros clientes para ser aliados estratégicos y fortalecer sus cadenas operativas.",
-    image: "/Image/Gallery/IMG-2.webp",
+    image: "/Image/Gallery/foto10.webp",
   },
 ];
 

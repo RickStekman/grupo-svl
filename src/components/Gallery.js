@@ -7,12 +7,12 @@ import Image from "next/image";
 const galleryImages = [
   "/Image/Gallery/IMG-1.webp", 
   "/Image/Gallery/IMG-2.webp",
-  "/Image/Gallery/IMG-3.webp",
-  "/Image/Gallery/IMG-8.webp",
+  "/Image/OpMaritimaPC/Foto(3).webp",
+  "/Image/ImpMaritimaGua/Foto(8).webp",
   "/Image/Gallery/IMG-5.webp",
   "/Image/Gallery/IMG-6.webp",
-  "/Image/Gallery/IMG-7.webp",
-  "/Image/Gallery/foto09.webp",
+  "/Image/ImpTraminteFarm/Foto(7).webp",
+  "/Image/ExpMarinaQuim/Foto(21).webp",
 ];
 
 export default function Gallery() {
