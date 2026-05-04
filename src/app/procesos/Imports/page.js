@@ -8,7 +8,7 @@ import {
   Truck, Ship, Factory, Warehouse, RefreshCcw, 
   ClipboardList, Gauge, ArrowLeft, ArrowRight, 
   Zap, ChevronDown, ShieldCheck, Globe, Anchor, FileText,
-  Plane, Box, Gavel, FileSearch, ClipboardCheck // Se agregaron las importaciones faltantes
+  Plane, Box, Gavel, FileSearch, ClipboardCheck, Camera, ArrowUpRight
 } from "lucide-react";
 
 // --- IMPORTA TUS COMPONENTES ---
@@ -44,7 +44,7 @@ export default function ImportsPage() {
       title: "Arribo a Puerto Destino",
       icon: <Anchor size={28} />,
       desc: "Recepción de la unidad en puerto venezolano y gestión de tasas portuarias para el inicio del proceso de nacionalización.",
-      tags: ["Puerto", "Tasas", "Desconsolidación"],
+      tags: ["Puerto", "Tasas", "Desconocilación"],
       image: "/Image/Gallery/IMG-1.webp", 
       align: "left"
     },
@@ -77,6 +77,14 @@ export default function ImportsPage() {
     { title: "Asesoría Técnica", icon: <FileSearch size={24} />, desc: "Consultoría normativa de alto nivel.", href: "/servicios/asesoria-tecnica" },
   ];
 
+  const galleryGlobal = [
+    { src: "/Image/OpMaritimaPC/foto(1).webp", title: "Carga en Puerto", location: "Puerto Cabello" },
+    { src: "/Image/ImpMaritimaGua/foto(2).webp", title: "Inspección de Contenedor", location: "La Guaira" },
+    { src: "/Image/ExpMarinaQuim/foto(3).webp", title: "Nacionalización Aérea", location: "Maiquetía" },
+    { src: "/Image/ImpMaritimaGua/foto(4).webp", title: "Logística Terrestre", location: "Valencia" },
+    { src: "/Image/ImpMaritimaGua/foto(5).webp", title: "Desaduanamiento", location: "Maracaibo" },
+  ];
+
   return (
     <>
       <Navbar />
@@ -101,7 +109,7 @@ export default function ImportsPage() {
               Proceso de <span className="text-brand">Importación</span>
             </h1>
             <p className="text-slate-400 text-lg md:text-xl leading-relaxed max-w-2xl italic">
-              Gestionamos el ingreso de su carga al territorio nacional con precisión técnica, garantizando el cumplimiento de la normativa aduanera venezolana.
+              Gestionamos el ingreso de su carga al territorio nacional con precisión técnica, garantizando el cumplimiento de la normativa aduanera venezolana.[cite: 5]
             </p>
           </div>
         </section>
@@ -179,7 +187,7 @@ export default function ImportsPage() {
                 <div className="bg-slate-900/50 backdrop-blur-md p-8 md:p-10 rounded-[1.9rem] border border-slate-800 flex flex-col md:flex-row items-center justify-between gap-8">
                     <div className="text-center md:text-left">
                         <h4 className="text-white font-black uppercase italic text-xl mb-2">¿Su empresa también exporta productos?</h4>
-                        <p className="text-slate-400 text-sm italic">Conozca nuestro flujo especializado para salidas internacionales.</p>
+                        <p className="text-slate-400 text-sm italic">Conozca nuestro flujo especializado para salidas internacionales.[cite: 5]</p>
                     </div>
                     <Link href="/procesos/Export">
                         <button className="group flex items-center gap-3 px-8 py-4 bg-slate-950 border border-brand/50 text-brand font-black uppercase text-xs tracking-widest rounded-xl hover:bg-brand hover:text-black transition-all">
@@ -191,15 +199,15 @@ export default function ImportsPage() {
         </section>
 
         {/* CTA BANNER */}
-        <section className="container mx-auto px-6 mb-32">
-          <div className="bg-gradient-to-br from-brand to-brand-dark rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden group">
+        <section className="container mx-auto px-6 mb-32 text-center">
+          <div className="bg-gradient-to-br from-brand to-brand-dark rounded-[3rem] p-12 md:p-20 relative overflow-hidden group shadow-2xl">
             <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10"></div>
             <div className="relative z-10">
               <h2 className="text-4xl md:text-6xl font-black text-black uppercase mb-6 leading-tight italic">
                 ¿Mercancía en camino?
               </h2>
               <p className="text-black/70 mb-10 max-w-xl mx-auto font-medium text-lg italic">
-                Asegure un proceso de nacionalización sin complicaciones con nuestro equipo de expertos aduanales.
+                Asegure un proceso de nacionalización sin complicaciones con nuestro equipo de expertos aduanales.[cite: 5]
               </p>
               <Link href="#Contact" className="inline-flex items-center gap-4 px-12 py-5 bg-black text-white font-black uppercase text-sm tracking-[0.2em] rounded-2xl hover:scale-105 transition-all shadow-2xl">
                 Solicitar Asesoría <ArrowRight size={20} />
@@ -226,6 +234,50 @@ export default function ImportsPage() {
                 </Link>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* NUEVA SECCIÓN: GALERÍA GLOBAL INFINITA */}
+        <section className="py-24 bg-slate-950 relative overflow-hidden">
+          <div className="container mx-auto px-6 mb-12">
+            <div className="flex items-center gap-3 text-brand mb-2">
+              <Camera size={20} />
+              <span className="font-black uppercase tracking-widest text-[10px]">Evidencia en Campo</span>
+            </div>
+            <h2 className="text-3xl md:text-5xl font-black uppercase italic text-white">Galería de <span className="text-brand">Operaciones</span></h2>
+          </div>
+
+          <div className="relative w-full overflow-hidden">
+             <div className="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-slate-950 to-transparent z-20 hidden md:block" />
+             <div className="absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-slate-950 to-transparent z-20 hidden md:block" />
+             
+             <motion.div 
+               className="flex gap-6 w-max"
+               animate={{ x: ["0%", "-50%"] }}
+               transition={{ ease: "linear", duration: 60, repeat: Infinity }}
+               whileHover={{ animationPlayState: "paused" }}
+             >
+               {[...galleryGlobal, ...galleryGlobal].map((img, i) => (
+                 <div key={i} className="w-[280px] md:w-[350px] aspect-square rounded-[2rem] overflow-hidden relative group border border-slate-800">
+                   <img src={img.src} alt={img.title} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
+                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950 to-transparent opacity-80" />
+                   <div className="absolute bottom-0 left-0 p-6">
+                     <span className="text-brand font-black uppercase text-[10px] tracking-widest block mb-1">{img.location}</span>
+                     <h4 className="text-white font-bold text-lg uppercase italic leading-tight">{img.title}</h4>
+                   </div>
+                 </div>
+               ))}
+             </motion.div>
+          </div>
+
+          {/* BOTÓN AL REGISTRO OPERATIVO */}
+          <div className="container mx-auto px-6 mt-16 flex justify-center">
+             <Link href="/procesos/" className="group flex items-center gap-6 bg-slate-900/50 border border-slate-800 p-2 pl-8 rounded-full hover:border-brand transition-all">
+                <span className="text-white font-black uppercase text-[10px] tracking-[0.2em]">Ver todos los casos de éxito</span>
+                <div className="bg-brand p-4 rounded-full group-hover:scale-110 transition-transform">
+                  <ArrowUpRight className="text-black size-5" />
+                </div>
+             </Link>
           </div>
         </section>
 

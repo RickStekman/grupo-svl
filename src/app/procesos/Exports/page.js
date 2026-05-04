@@ -9,7 +9,7 @@ import {
   UserCheck, ClipboardCheck, Ship, LandmarkIcon,
   FileBox, Send, Receipt, ArrowLeft, ArrowRight, ArrowDown,
   Globe, ShieldAlert, Truck, Gavel, Warehouse, Zap, FileSearch,
-  Plane, ShieldCheck, Box // <--- SE AGREGÓ 'Box' AQUÍ
+  Plane, ShieldCheck, Box, Camera, ArrowUpRight
 } from "lucide-react";
 
 // --- IMPORTA TUS COMPONENTES ---
@@ -89,6 +89,14 @@ export default function ExportPage() {
     { title: "Asesoría Logística", icon: <Box size={24} />, desc: "Consultoría experta en comercio.", href: "/servicios/asesoria-tecnica" },
   ];
 
+  const galleryGlobal = [
+    { src: "/Image/ExpMarinaQuim/foto(2).webp", title: "Carga de Químicos", location: "Puerto Cabello" },
+    { src: "/Image/ExpMarinaQuim/foto(3).webp", title: "Inspección de Exportación", location: "La Guaira" },
+    { src: "/Image/OpMaritimaPC/foto(5).webp", title: "Embarque Internacional", location: "Puerto Cabello" },
+    { src: "/Image/ExpMarinaQuim/foto(7).webp", title: "Verificación de Sellos", location: "Valencia" },
+    { src: "/Image/ExpMarinaQuim/foto(13).webp", title: "Logística de Salida", location: "Maiquetía" },
+  ];
+
   return (
     <>
       <Navbar />
@@ -112,8 +120,8 @@ export default function ExportPage() {
             <h1 className="text-5xl md:text-7xl font-black text-white mb-6 uppercase leading-[0.9] italic">
               Ciclo de <span className="text-brand-dark">Exportación</span>
             </h1>
-            <p className="text-slate-400 text-lg md:text-xl leading-relaxed max-w-2xl">
-              Potenciamos la salida de sus productos nacionales mediante un flujo operativo robusto y blindado ante las exigencias de seguridad global.
+            <p className="text-slate-400 text-lg md:text-xl leading-relaxed max-w-2xl italic">
+              Potenciamos la salida de sus productos nacionales mediante un flujo operativo robusto y blindado ante las exigencias de seguridad global.[cite: 5]
             </p>
           </motion.div>
         </section>
@@ -215,7 +223,7 @@ export default function ExportPage() {
                 <div className="bg-slate-900/50 backdrop-blur-md p-8 md:p-10 rounded-[1.9rem] border border-slate-800 flex flex-col md:flex-row items-center justify-between gap-8">
                     <div className="text-center md:text-left">
                         <h4 className="text-white font-black uppercase italic text-xl mb-2">¿Su logística requiere importación?</h4>
-                        <p className="text-slate-400 text-sm italic">Conozca nuestro flujo especializado para el ingreso seguro de mercancía.</p>
+                        <p className="text-slate-400 text-sm italic">Conozca nuestro flujo especializado para el ingreso seguro de mercancía.[cite: 5]</p>
                     </div>
                     <Link href="/procesos/Imports">
                         <div className="group flex items-center gap-3 px-8 py-4 bg-slate-950 border border-brand/50 text-brand font-black uppercase text-xs tracking-widest rounded-xl hover:bg-brand hover:text-black transition-all cursor-pointer">
@@ -227,15 +235,15 @@ export default function ExportPage() {
         </section>
 
         {/* CTA BANNER */}
-        <section className="container mx-auto px-6 mb-32">
-          <div className="bg-gradient-to-br from-brand to-yellow-600 rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden group">
+        <section className="container mx-auto px-6 mb-32 text-center">
+          <div className="bg-gradient-to-br from-brand to-yellow-600 rounded-[3rem] p-12 md:p-20 relative overflow-hidden group shadow-2xl">
             <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10"></div>
             <div className="relative z-10">
               <h2 className="text-4xl md:text-6xl font-black text-black uppercase mb-6 leading-tight italic">
                 ¿Listo para Exportar?
               </h2>
-              <p className="text-black/70 mb-10 max-w-xl mx-auto font-medium text-lg">
-                Garantizamos que su producción nacional cumpla con todos los estándares internacionales para un despacho exitoso.
+              <p className="text-black/70 mb-10 max-w-xl mx-auto font-medium text-lg italic">
+                Garantizamos que su producción nacional cumpla con todos los estándares internacionales para un despacho exitoso.[cite: 5]
               </p>
               <Link href="#Contact" className="inline-flex items-center gap-4 px-12 py-5 bg-black text-white font-black uppercase text-sm tracking-[0.2em] rounded-2xl hover:scale-105 transition-all shadow-2xl">
                 Consultar Despacho <ArrowRight size={20} />
@@ -265,7 +273,51 @@ export default function ExportPage() {
           </div>
         </section>
 
-        {/* SECCIÓN CONTACTO */}
+        {/* NUEVA SECCIÓN: GALERÍA GLOBAL INFINITA */}
+        <section className="py-24 bg-slate-950 relative overflow-hidden">
+          <div className="container mx-auto px-6 mb-12">
+            <div className="flex items-center gap-3 text-brand mb-2">
+              <Camera size={20} />
+              <span className="font-black uppercase tracking-widest text-[10px]">Registro de Despachos</span>
+            </div>
+            <h2 className="text-3xl md:text-5xl font-black uppercase italic text-white">Galería de <span className="text-brand">Exportaciones</span></h2>
+          </div>
+
+          <div className="relative w-full overflow-hidden">
+             <div className="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-slate-950 to-transparent z-20 hidden md:block" />
+             <div className="absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-slate-950 to-transparent z-20 hidden md:block" />
+             
+             <motion.div 
+               className="flex gap-6 w-max"
+               animate={{ x: ["0%", "-50%"] }}
+               transition={{ ease: "linear", duration: 70, repeat: Infinity }}
+               whileHover={{ animationPlayState: "paused" }}
+             >
+               {[...galleryGlobal, ...galleryGlobal].map((img, i) => (
+                 <div key={i} className="w-[280px] md:w-[350px] aspect-square rounded-[2rem] overflow-hidden relative group border border-slate-800">
+                   <img src={img.src} alt={img.title} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
+                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950 to-transparent opacity-80" />
+                   <div className="absolute bottom-0 left-0 p-6">
+                     <span className="text-brand font-black uppercase text-[10px] tracking-widest block mb-1">{img.location}</span>
+                     <h4 className="text-white font-bold text-lg uppercase italic leading-tight">{img.title}</h4>
+                   </div>
+                 </div>
+               ))}
+             </motion.div>
+          </div>
+
+          {/* BOTÓN AL REGISTRO OPERATIVO */}
+          <div className="container mx-auto px-6 mt-16 flex justify-center">
+             <Link href="/procesos/" className="group flex items-center gap-6 bg-slate-900/50 border border-slate-800 p-2 pl-8 rounded-full hover:border-brand transition-all shadow-xl">
+                <span className="text-white font-black uppercase text-[10px] tracking-[0.2em]">Ver todos los casos de éxito</span>
+                <div className="bg-brand p-4 rounded-full group-hover:scale-110 transition-transform">
+                  <ArrowUpRight className="text-black size-5" />
+                </div>
+             </Link>
+          </div>
+        </section>
+
+        {/* CONTACTO */}
         <div id="Contact" className="py-32 bg-white rounded-t-[4rem] shadow-[0_-20px_50px_rgba(0,0,0,0.2)]"> 
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">

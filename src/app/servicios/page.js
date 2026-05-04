@@ -179,7 +179,7 @@ export default function ServiciosPage() {
             Nuestro equipo de expertos está listo para asesorarle en su próxima importación o exportación.
           </p>
           <Link 
-            href="/contacto" 
+            href="#Contact" 
             className="inline-block bg-black text-white px-12 py-5 rounded-full font-black uppercase text-sm tracking-[0.2em] hover:scale-105 transition-transform relative z-10"
           >
             Hablemos hoy
