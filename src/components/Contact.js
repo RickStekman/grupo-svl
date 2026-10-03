@@ -107,7 +107,7 @@ export default function Contact() {
                       name="user_email" 
                       type="email" 
                       className="w-full px-5 py-4 bg-white border border-slate-200 rounded-2xl focus:ring-2 focus:ring-yellow-500 focus:border-transparent outline-none transition-all text-slate-900" 
-                      placeholder="correo@ejemplo.com" 
+                      placeholder="Tu Email correo@ejemplo.com" 
                       required 
                     />
                   </div>
