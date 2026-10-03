@@ -62,6 +62,17 @@ export default function Footer() {
 
         <div className="pt-8 border-t border-white/10 text-center text-slate-500 text-sm">
           <p>© {new Date().getFullYear()} Multiservicios Logisticos S.V.L. SERVICUSTOMS AGENCY & SERVICE VALUE LOGISTICS INC | Todos los derechos reservados.</p>
+          <p>
+            Página web diseñada por{' '}
+            <Link 
+              href="https://www.instagram.com/rickstekman" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-slate-400 hover:text-white hover:underline transition-colors font-medium"
+            >
+              Rick Stekman
+            </Link>
+          </p>
         </div>
       </div>
     </footer>

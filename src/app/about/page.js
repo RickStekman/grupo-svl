@@ -54,15 +54,15 @@ export default function AboutPage() {
       city: "Puerto Cabello",
       state: "Edo. Carabobo",
       desc: "Nuestra sede principal y centro de operaciones aduanales. Ubicada estratégicamente cerca del puerto más importante de Venezuela.",
-      address: "Calle Municipio, Edif. S.V.L., Puerto Cabello.",
+      address: "Av. Augusto Brand C.C. Cumboto nivel mezzanina oficina 03.",
       image: "/Image/Gallery/cede01.webp",
       icon: <Anchor size={32} />
     },
     {
       city: "La Guaira",
-      state: "Edo. La Guaira",
+      state: "Edo. Vargas",
       desc: "Punto clave para nuestras operaciones marítimas y aéreas en la capital. Gestionamos con agilidad el flujo por Maiquetía y el Puerto.",
-      address: "Centro Empresarial, Ofic. S.V.L., La Guaira.",
+      address: "Calle Padre Machado, Centro Empresarial, Estrella Azul (QUINTA MARIA) Ofic. Nro A-1, Maiquetía",
       image: "/Image/Gallery/cede03.webp",
       icon: <Plane size={32} />
     },
@@ -70,7 +70,7 @@ export default function AboutPage() {
       city: "Valencia",
       state: "Edo. Carabobo",
       desc: "Centro administrativo y de coordinación de transporte terrestre. Desde la capital industrial, monitoreamos nuestra flota nacional.",
-      address: "Av. Bolívar Norte, Torre Empresarial, Valencia.",
+      address: "Av. Bolívar Norte, Torre Empresarial, Piso 6 Oficina 19, Valencia.",
       image: "/Image/Gallery/cede02.webp",
       icon: <Truck size={32} />
     }

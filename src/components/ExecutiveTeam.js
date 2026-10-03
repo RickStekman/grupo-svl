@@ -6,19 +6,19 @@ export default function ExecutiveTeam() {
     { 
       id: 1, 
       name: "LCD. OMAR E. VILLANUEVA", 
-      role: "Director Ejecutivo", 
+      role: "C.E.O.", 
       img: "/Image/Tren1.webp"
     },
     { 
       id: 2, 
       name: "LCDO. ARNOLD J. CARDENAS", 
-      role: "Director Ejecutivo", 
+      role: "Director de aduanas", 
       img: "/Image/Tren2.webp"
     },
     { 
       id: 3, 
       name: "LCDO. MIGUEL E. ARMAS", 
-      role: "Gerente de Aduanas", 
+      role: "Gerente de operaciones", 
       img: "/Image/Tren3.webp"
     }
   ];
