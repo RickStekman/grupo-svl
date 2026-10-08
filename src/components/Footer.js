@@ -43,7 +43,7 @@ export default function Footer() {
                 <Phone size={18} className="text-brand-dark" /> +58 414-4997279
               </li>
               <li className="flex items-center gap-3">
-                <Mail size={18} className="text-brand-dark" /> contacto@gruposvl.com
+                <Mail size={18} className="text-brand-dark" /> ventas@multiserviciossvl.com
               </li>
               <li className="flex items-center gap-4 pt-4">
                 <Link href="https://www.instagram.com/multiservicios_svl/" className="p-2 bg-slate-900 rounded-full hover:bg-brand-dark hover:text-black transition-all">

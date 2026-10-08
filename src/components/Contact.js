@@ -80,7 +80,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h5 className="font-bold text-slate-900 text-lg">Email</h5>
-                  <p className="text-slate-500 text-base">info@gruposvl.com</p>
+                  <p className="text-slate-500 text-base">ventas@multiserviciossvl.com</p>
                 </div>
               </div>
             </div>
